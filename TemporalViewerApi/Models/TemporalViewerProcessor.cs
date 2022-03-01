@@ -57,6 +57,10 @@ namespace TemporalViewerApi.Models
                 results.Messages.Add("Temporal Table Infon not found, please verify Schema and Table names.");
                 return results;
             }
+            results.BaseSchemaName = TemporalTableInfo.BaseSchemaName;
+            results.BaseTableName = TemporalTableInfo.BaseTableName;
+            results.HistorySchemaName = TemporalTableInfo.HistorySchemaName;
+            results.HistoryTableName = TemporalTableInfo.HistoryTableName;
 
             // Load Columns
             results.TableColumns = _repo.GetTableColumns(request.SchemaName, request.TableName).TableColumns;
