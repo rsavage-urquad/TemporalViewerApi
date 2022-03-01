@@ -1,4 +1,4 @@
-# DataLayerGen
+# TemporalViewerApi
 
 This C# Web API project can be used to retrieve Temporal information from a Microsoft SQL Server Database.
 
